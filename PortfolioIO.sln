@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2019
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortfolioIO", "PortfolioIO\PortfolioIO.csproj", "{501D964E-6B80-4CD3-9DF5-6C4FF9B678E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{501D964E-6B80-4CD3-9DF5-6C4FF9B678E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{501D964E-6B80-4CD3-9DF5-6C4FF9B678E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{501D964E-6B80-4CD3-9DF5-6C4FF9B678E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{501D964E-6B80-4CD3-9DF5-6C4FF9B678E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {83C67F8D-E3E9-4F7F-B24E-EAF9600BF6DD}
+	EndGlobalSection
+EndGlobal
