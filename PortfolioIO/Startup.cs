@@ -1,17 +1,25 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using GraphQL;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
+using PortfolioIO.Orders.Schema;
 using PortfolioIO.Orders.Services;
 
 namespace PortfolioIO.Web
 {
     public class Startup
     {
-        
+
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<IOrderService, OrderService>();
             services.AddSingleton<ICustomerService, CustomerService>();
+            services.AddSingleton<OrderType>();
+            services.AddSingleton<CustomerType>();
+            services.AddSingleton<OrderStatusesEnum>();
+            services.AddSingleton<OrdersQuery>();
+            services.AddSingleton<OrdersSchema>();
+            services.AddSingleton<IDependencyResolver>(c => new FuncDependencyResolver(type => c.GetRequiredService(type)));
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
